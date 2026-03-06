@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T2 + Private Garage — Lagos, Algarve | €368,000</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Stunning 120m² T2 apartment with rare independent private garage in São Gonçalo de Lagos, Algarve. 2 bedrooms, 2 bathrooms, balcony, elevator. €368,000 — direct sale by owner, no agency.">
+  <meta name="keywords" content="apartment for sale Lagos Algarve, T2 Lagos Portugal, private garage Lagos, expat property Algarve, São Gonçalo Lagos">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="T2 + Private Garage — Lagos, Algarve | €368,000">
+  <meta property="og:description" content="120m² T2 apartment + rare independent garage in São Gonçalo de Lagos. Direct owner sale — no agency, no commission. €368,000.">
+  <meta property="og:image" content="varanda-1.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="pt_PT">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── TOKENS ─────────────────────────────────────────────── */
+    :root {
+      --cream:      #F7F2EA;
+      --off-white:  #FDFAF5;
+      --terracotta: #C4532A;
+      --terra-lt:   #D9694A;
+      --gold:       #C49A3A;
+      --gold-lt:    #DDB85C;
+      --navy:       #1C2B3A;
+      --slate:      #3D4F61;
+      --slate-lt:   #6B8197;
+      --sand:       #E8D9C0;
+      --sand-dk:    #D0BEA0;
+      --text:       #1C2B3A;
+      --text-lt:    #4A5E6E;
+
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'DM Sans', system-ui, sans-serif;
+
+      --ease:   cubic-bezier(.25,.46,.45,.94);
+      --t:      .4s var(--ease);
+      --ts:     .7s var(--ease);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: var(--sans); background: var(--off-white); color: var(--text); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; }
+
+    /* ─── NAV ────────────────────────────────────────────────── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.25rem 2rem;
+      transition: background var(--t), box-shadow var(--t);
+    }
+    .nav.scrolled {
+      background: rgba(253,250,245,.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 var(--sand);
+    }
+    .nav-brand {
+      font-family: var(--serif); font-size: .85rem; font-weight: 500;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: transparent;
+      transition: color var(--t);
+    }
+    .nav.scrolled .nav-brand { color: var(--navy); }
+
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
+
+    .lang-toggle {
+      display: flex; align-items: center;
+      background: rgba(255,255,255,.18); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,.35); border-radius: 2rem; padding: .2rem;
+      transition: background var(--t), border-color var(--t);
+    }
+    .nav.scrolled .lang-toggle { background: var(--sand); border-color: var(--sand-dk); }
+
+    .lang-btn {
+      padding: .28rem .7rem; border: none; background: transparent; border-radius: 1.5rem;
+      font-size: .68rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+      color: rgba(255,255,255,.65); cursor: pointer; transition: all var(--t);
+    }
+    .nav.scrolled .lang-btn { color: var(--slate-lt); }
+    .lang-btn.active { background: var(--terracotta); color: #fff !important; }
+
+    .nav-cta {
+      display: none; padding: .48rem 1.2rem;
+      background: var(--terracotta); color: #fff;
+      border-radius: 2rem; font-size: .72rem; font-weight: 600;
+      letter-spacing: .07em; text-transform: uppercase;
+      transition: background var(--t);
+    }
+    .nav.scrolled .nav-cta { display: block; }
+    .nav-cta:hover { background: var(--terra-lt); }
+
+    /* ─── HERO ───────────────────────────────────────────────── */
+    .hero {
+      position: relative; height: 100svh; min-height: 620px;
+      overflow: hidden; display: flex; align-items: flex-end;
+      padding-bottom: 5rem;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('varanda-1.jpg') center/cover no-repeat;
+      transform: scale(1.06); will-change: transform;
+    }
+    /* warm grain overlay */
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+      opacity: .35; pointer-events: none; mix-blend-mode: overlay;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(28,43,58,.1) 0%,
+        rgba(28,43,58,.02) 35%,
+        rgba(28,43,58,.55) 75%,
+        rgba(28,43,58,.82) 100%
+      );
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+    }
+    .hero-eyebrow {
+      font-size: .82rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold-lt); margin-bottom: 1rem;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp .8s .3s var(--ease) forwards;
+    }
+    .hero-title {
+      font-family: var(--serif); font-size: clamp(2.8rem,6.5vw,5.8rem);
+      font-weight: 300; line-height: 1.06; color: #fff;
+      max-width: 820px; margin-bottom: 1.4rem;
+      opacity: 0; transform: translateY(28px);
+      animation: fadeUp .9s .5s var(--ease) forwards;
+    }
+    .hero-title em { font-style: italic; color: var(--gold-lt); }
+    .hero-sub {
+      font-size: 1.05rem; font-weight: 300; color: rgba(255,255,255,.78);
+      letter-spacing: .02em; margin-bottom: 2.5rem;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp .8s .7s var(--ease) forwards;
+    }
+    .hero-foot {
+      display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+      opacity: 0; transform: translateY(18px);
+      animation: fadeUp .8s .9s var(--ease) forwards;
+    }
+    .hero-price-label { font-size: .76rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-bottom: .25rem; }
+    .hero-price-val { font-family: var(--serif); font-size: 2.4rem; font-weight: 500; color: #fff; line-height: 1; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .9rem 1.9rem; border: none; border-radius: 2rem; cursor: pointer;
+      font-family: var(--sans); font-size: .78rem; font-weight: 600;
+      letter-spacing: .08em; text-transform: uppercase; transition: all var(--t);
+    }
+    .btn-primary { background: var(--terracotta); color: #fff; }
+    .btn-primary:hover { background: var(--terra-lt); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(196,83,42,.35); }
+    .btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+    .hero-scroll {
+      position: absolute; bottom: 2rem; right: 2rem;
+      display: flex; flex-direction: column; align-items: center; gap: .5rem;
+      color: rgba(255,255,255,.42); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase;
+      opacity: 0; animation: fadeIn 1s 1.6s forwards;
+    }
+    .hero-scroll-line { width: 1px; height: 42px; background: rgba(255,255,255,.25); position: relative; overflow: hidden; }
+    .hero-scroll-line::after {
+      content: ''; position: absolute; top: -100%; left: 0; width: 100%; height: 100%;
+      background: rgba(255,255,255,.75);
+      animation: scrollLine 2s 1.6s ease-in-out infinite;
+    }
+
+    /* ─── SECTION BASE ───────────────────────────────────────── */
+    .section { padding: 6rem 2rem; }
+    .inner { max-width: 1200px; margin: 0 auto; }
+    .eyebrow {
+      display: block; font-size: .65rem; font-weight: 600;
+      letter-spacing: .22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: .7rem;
+    }
+    .s-title {
+      font-family: var(--serif); font-size: clamp(1.9rem,3.8vw,3.1rem);
+      font-weight: 400; line-height: 1.15; color: var(--navy); margin-bottom: 1.2rem;
+    }
+    .s-title em { font-style: italic; color: var(--terracotta); }
+    .divider { width: 2.5rem; height: 2px; background: var(--gold); margin-bottom: 2rem; }
+
+    /* ─── GALLERY ────────────────────────────────────────────── */
+    .gallery-section { background: var(--cream); padding: 6rem 2rem; }
+
+    .group { max-width: 1200px; margin: 0 auto 3.5rem; }
+    .group-label {
+      font-size: .62rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--slate-lt); margin-bottom: .85rem;
+      display: flex; align-items: center; gap: .75rem;
+    }
+    .group-label::after { content: ''; flex: 1; height: 1px; background: var(--sand-dk); }
+
+    .g-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: .45rem; }
+    .g-grid.two { grid-template-columns: repeat(2,1fr); }
+    .g-grid.feat { grid-template-columns: 2fr 1fr; }
+    .g-grid.feat .gi:first-child { grid-row: span 2; aspect-ratio: unset; min-height: 0; }
+
+    .gi {
+      position: relative; overflow: hidden; cursor: pointer;
+      background: var(--sand); aspect-ratio: 4/3;
+    }
+    .gi img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform var(--ts), filter var(--ts);
+      filter: saturate(.88);
+    }
+    .gi:hover img { transform: scale(1.05); filter: saturate(1.05); }
+    .gi-ov {
+      position: absolute; inset: 0;
+      background: rgba(28,43,58,0); transition: background var(--t);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .gi:hover .gi-ov { background: rgba(28,43,58,.22); }
+    .gi-ov svg { opacity: 0; transform: scale(.8); transition: all var(--t); }
+    .gi:hover .gi-ov svg { opacity: 1; transform: scale(1); }
+
+    /* Floorplan callout */
+    .floorplan { max-width: 1200px; margin: 0 auto 2rem; }
+    .fp-card {
+      background: #fff; border: 1px solid var(--sand); border-radius: .4rem;
+      padding: 2.5rem; display: flex; gap: 2.5rem; align-items: center;
+    }
+    .fp-img { flex: 0 0 280px; cursor: pointer; overflow: hidden; border-radius: .2rem; }
+    .fp-img img { width: 100%; transition: transform var(--t); }
+    .fp-img:hover img { transform: scale(1.04); }
+    .fp-info h3 { font-family: var(--serif); font-size: 1.7rem; font-weight: 400; color: var(--navy); margin-bottom: .75rem; }
+    .fp-info p { font-size: .9rem; line-height: 1.7; color: var(--text-lt); }
+
+    /* ─── DETAILS ────────────────────────────────────────────── */
+    .details-section {
+      background: var(--navy); padding: 6rem 2rem;
+      position: relative; overflow: hidden;
+    }
+    .details-section::before {
+      content: '';
+      position: absolute; top: -50%; right: -10%; width: 55%; height: 200%;
+      background: radial-gradient(ellipse, rgba(201,151,58,.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .details-section .eyebrow { color: var(--gold); }
+    .details-section .s-title { color: var(--cream); }
+
+    .specs { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: .45rem; margin-bottom: 2.5rem; }
+    .spec {
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+      padding: 1.4rem; border-radius: .2rem; transition: background var(--t);
+    }
+    .spec:hover { background: rgba(255,255,255,.08); }
+    .spec-ico { font-size: 1.3rem; margin-bottom: .65rem; display: block; }
+    .spec-val { font-family: var(--serif); font-size: 1.55rem; font-weight: 500; color: #fff; line-height: 1; margin-bottom: .35rem; }
+    .spec-lbl { font-size: .66rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.42); }
+
+    .garage-callout {
+      background: linear-gradient(135deg, var(--terracotta) 0%, #A0401C 100%);
+      border-radius: .4rem; padding: 2.5rem 3rem;
+      display: flex; align-items: center; gap: 1.75rem;
+      position: relative; overflow: hidden;
+    }
+    .garage-callout::after {
+      content: '🚗'; position: absolute; right: 2.5rem; top: 50%;
+      transform: translateY(-50%); font-size: 5rem; opacity: .18; pointer-events: none;
+      filter: brightness(0) invert(1);
+    }
+    .gc-ico { font-size: 2.2rem; flex-shrink: 0; }
+    .gc-text h3 { font-family: var(--serif); font-size: 1.55rem; font-weight: 400; color: #fff; margin-bottom: .5rem; line-height: 1.2; }
+    .gc-text p { font-size: .88rem; line-height: 1.6; color: rgba(255,255,255,.78); }
+
+    /* ─── VIDEO ──────────────────────────────────────────────── */
+    .video-section { background: var(--cream); padding: 6rem 2rem; }
+    .vid-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+    .vid-lbl { font-size: .63rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--slate-lt); margin-bottom: .7rem; }
+    .vid-embed { position: relative; padding-bottom: 56.25%; background: var(--navy); border-radius: .3rem; overflow: hidden; }
+    .vid-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+    /* ─── LOCATION ───────────────────────────────────────────── */
+    .location-section { padding: 6rem 2rem; }
+    .loc-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .loc-text p { font-size: .93rem; line-height: 1.78; color: var(--text-lt); margin-bottom: 1.25rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.5rem; list-style: none; }
+    .tag { padding: .32rem .8rem; background: var(--cream); border: 1px solid var(--sand-dk); border-radius: 2rem; font-size: .73rem; font-weight: 500; color: var(--slate); }
+    .map-wrap { border-radius: .4rem; overflow: hidden; box-shadow: 0 20px 60px rgba(28,43,58,.14); }
+    .map-wrap iframe { display: block; width: 100%; height: 400px; border: none; }
+
+    /* ─── LIFESTYLE ──────────────────────────────────────────── */
+    .lifestyle-section { background: var(--cream); padding: 6rem 2rem; }
+    .life-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.25rem; margin-top: 3rem; }
+    .life-card {
+      padding: 2rem 1.5rem; background: #fff; border-radius: .25rem;
+      transition: transform var(--t), box-shadow var(--t);
+    }
+    .life-card:hover { transform: translateY(-5px); box-shadow: 0 14px 40px rgba(28,43,58,.1); }
+    .life-ico { font-size: 2rem; margin-bottom: 1rem; display: block; }
+    .life-card h4 { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; color: var(--navy); margin-bottom: .65rem; }
+    .life-card p { font-size: .83rem; line-height: 1.68; color: var(--text-lt); }
+
+    /* ─── CONTACT ────────────────────────────────────────────── */
+    .contact-section { background: var(--navy); padding: 6rem 2rem; position: relative; overflow: hidden; }
+    .contact-section::before {
+      content: ''; position: absolute; bottom: -30%; left: -10%; width: 60%; height: 160%;
+      background: radial-gradient(ellipse, rgba(196,83,42,.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .contact-section .eyebrow { color: var(--gold); }
+    .contact-section .s-title { color: var(--cream); }
+    .contact-section .divider { background: var(--terracotta); }
+
+    .contact-inner { max-width: 720px; margin: 0 auto; position: relative; }
+
+    .contact-note { font-size: .85rem; color: rgba(255,255,255,.58); line-height: 1.7; margin-bottom: 1.75rem; }
+    .c-btns { display: flex; flex-direction: column; gap: .85rem; margin-bottom: 2rem; }
+    .c-btn {
+      display: inline-flex; align-items: center; gap: .75rem;
+      padding: .95rem 1.4rem; border-radius: .25rem; font-size: .88rem; font-weight: 500;
+      transition: all var(--t); cursor: pointer;
+    }
+    .c-btn-wa { background: #25D366; color: #0a2e1a; font-weight: 600; }
+    .c-btn-wa:hover { background: #1ebe5d; transform: translateX(4px); }
+    .c-btn-em { background: rgba(255,255,255,.08); color: var(--cream); border: 1px solid rgba(255,255,255,.14); }
+    .c-btn-em:hover { background: rgba(255,255,255,.13); transform: translateX(4px); }
+
+    .listings-row { margin-top: 1.5rem; }
+    .listings-row h5 { font-size: .62rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: .65rem; }
+    .listings-row a { display: inline-flex; align-items: center; gap: .4rem; font-size: .78rem; color: var(--gold); margin-right: 1.25rem; transition: color var(--t); }
+    .listings-row a:hover { color: var(--gold-lt); }
+
+    .c-form { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09); border-radius: .4rem; padding: 2.5rem; }
+    .c-form h3 { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; color: var(--cream); margin-bottom: 1.5rem; }
+    .f-group { margin-bottom: .9rem; }
+    .f-group label { display: block; font-size: .67rem; font-weight: 600; letter-spacing: .11em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: .38rem; }
+    .f-group input, .f-group textarea {
+      width: 100%; padding: .72rem .95rem;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: .22rem;
+      color: #fff; font-family: var(--sans); font-size: .9rem; outline: none;
+      transition: border-color var(--t), background var(--t);
+    }
+    .f-group input::placeholder, .f-group textarea::placeholder { color: rgba(255,255,255,.28); }
+    .f-group input:focus, .f-group textarea:focus { border-color: rgba(201,151,58,.5); background: rgba(255,255,255,.1); }
+    .f-group textarea { resize: vertical; min-height: 96px; }
+    .f-submit { width: 100%; margin-top: .5rem; }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    footer { background: #0F1A24; padding: 2.5rem 2rem; text-align: center; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: .65rem; }
+    .f-text { font-size: .73rem; color: rgba(255,255,255,.6); letter-spacing: .07em; }
+    .f-disc { font-size: .68rem; color: rgba(255,255,255,.4); max-width: 480px; line-height: 1.55; }
+
+    /* ─── LIGHTBOX ───────────────────────────────────────────── */
+    .lb {
+      position: fixed; inset: 0; z-index: 999;
+      background: rgba(8,14,20,.96);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity .3s;
+    }
+    .lb.open { opacity: 1; pointer-events: all; }
+    .lb-img { max-width: 90vw; max-height: 88vh; object-fit: contain; border-radius: 2px; }
+    .lb-close {
+      position: absolute; top: 1.25rem; right: 1.25rem;
+      background: rgba(255,255,255,.1); border: none; color: #fff;
+      width: 2.4rem; height: 2.4rem; border-radius: 50%; font-size: 1.1rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: background .2s;
+    }
+    .lb-close:hover { background: rgba(255,255,255,.2); }
+    .lb-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,.1); border: none; color: #fff;
+      width: 2.8rem; height: 2.8rem; border-radius: 50%; font-size: 1.4rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: background .2s;
+    }
+    .lb-nav:hover { background: rgba(255,255,255,.2); }
+    .lb-prev { left: 1.25rem; }
+    .lb-next { right: 1.25rem; }
+    .lb-count { position: absolute; bottom: 1.25rem; left: 50%; transform: translateX(-50%); font-size: .72rem; color: rgba(255,255,255,.38); letter-spacing: .1em; }
+
+    /* ─── SCROLL REVEAL ──────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity var(--ts), transform var(--ts); }
+    .reveal.visible { opacity: 1; transform: none; }
+    .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; } .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
+
+    /* ─── KEYFRAMES ──────────────────────────────────────────── */
+    @keyframes fadeUp { to { opacity: 1; transform: none; } }
+    @keyframes fadeIn { to { opacity: 1; } }
+    @keyframes scrollLine { 0% { top: -100%; } 100% { top: 100%; } }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      .g-grid { grid-template-columns: repeat(2,1fr); }
+      .g-grid.feat { grid-template-columns: 1fr; }
+      .g-grid.feat .gi:first-child { aspect-ratio: 4/3; grid-row: span 1; }
+      .vid-grid { grid-template-columns: 1fr; }
+      .loc-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .life-grid { grid-template-columns: repeat(2,1fr); }
+      .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .fp-card { flex-direction: column; }
+      .fp-img { flex: none; width: 100%; }
+    }
+    @media (max-width: 600px) {
+      .section, .gallery-section, .details-section, .video-section,
+      .location-section, .lifestyle-section, .contact-section { padding: 4rem 1.25rem; }
+      .g-grid { grid-template-columns: 1fr; gap: .35rem; }
+      .g-grid.two { grid-template-columns: 1fr; }
+      .life-grid { grid-template-columns: 1fr; }
+      .specs { grid-template-columns: repeat(2,1fr); }
+      .hero { padding-bottom: 3.5rem; }
+      .hero-title { font-size: 2.5rem; }
+      .garage-callout { padding: 1.75rem; }
+      .nav { padding: 1rem 1.25rem; }
+      .nav-cta { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════ -->
+<nav class="nav" id="mainNav">
+  <div class="nav-brand" data-en="Lagos · Algarve" data-pt="Lagos · Algarve">Lagos · Algarve</div>
+  <div class="nav-right">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <a href="#contact" class="nav-cta" data-en="Get in Touch" data-pt="Contactar">Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section class="hero" id="top" aria-label="Hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-en="São Gonçalo de Lagos · Algarve, Portugal" data-pt="São Gonçalo de Lagos · Algarve, Portugal">São Gonçalo de Lagos · Algarve, Portugal</p>
+    <h1 class="hero-title" data-en="Your Life in the <em>Algarve</em><br>Starts Here" data-pt="A Sua Vida no <em>Algarve</em><br>Começa Aqui">Your Life in the <em>Algarve</em><br>Starts Here</h1>
+    <p class="hero-sub" data-en="T2 Apartment + Independent Private Garage &nbsp;·&nbsp; 120 m² &nbsp;·&nbsp; Central Lagos Location" data-pt="Apartamento T2 + Garagem Privada Independente &nbsp;·&nbsp; 120 m² &nbsp;·&nbsp; Localização Central em Lagos">T2 Apartment + Independent Private Garage &nbsp;·&nbsp; 120 m² &nbsp;·&nbsp; Central Lagos Location</p>
+    <div class="hero-foot">
+      <div>
+        <p class="hero-price-label" data-en="Asking Price" data-pt="Preço de Venda">Asking Price</p>
+        <p class="hero-price-val">€368,000</p>
+      </div>
+      <a href="#contact" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        <span data-en="Schedule a Visit" data-pt="Agendar Visita">Schedule a Visit</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span data-en="Scroll" data-pt="Deslize">Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     GALLERY
+═══════════════════════════════════════════ -->
+<section class="gallery-section" id="gallery">
+
+  <div class="inner reveal" style="margin-bottom:3rem;">
+    <span class="eyebrow" data-en="Photo Gallery" data-pt="Galeria de Fotos">Photo Gallery</span>
+    <h2 class="s-title" data-en="Every Room, <em>Every Detail</em>" data-pt="Cada Divisão, <em>Cada Detalhe</em>">Every Room, <em>Every Detail</em></h2>
+    <div class="divider"></div>
+  </div>
+
+  <!-- Living areas -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Living Areas" data-pt="Zona de Estar">Living Areas</div>
+    <div class="g-grid feat">
+      <div class="gi" data-idx="0">
+        <img src="sala-1.jpg" alt="Living room" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="1">
+        <img src="sala-2.jpg" alt="Living room" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="2">
+        <img src="sala-3.jpg" alt="Living room" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kitchen -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Kitchen &amp; Storage" data-pt="Cozinha e Dispensa">Kitchen &amp; Storage</div>
+    <div class="g-grid">
+      <div class="gi" data-idx="3">
+        <img src="cozinha-1.jpg" alt="Kitchen" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="4">
+        <img src="cozinha-2.jpg" alt="Kitchen" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="5">
+        <img src="dispensa.jpg" alt="Pantry" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entrance -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Entrance &amp; Hallway" data-pt="Entrada e Corredor">Entrance &amp; Hallway</div>
+    <div class="g-grid two">
+      <div class="gi" data-idx="6">
+        <img src="hall.jpg" alt="Entrance hall" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="7">
+        <img src="corredor.jpg" alt="Corridor" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bedrooms & Suite -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Master Suite &amp; Bedroom" data-pt="Suite e Quarto">Master Suite &amp; Bedroom</div>
+    <div class="g-grid two">
+      <div class="gi" data-idx="8">
+        <img src="suite-1.jpg" alt="Master suite" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="9">
+        <img src="suite-2.jpg" alt="Master suite" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="10">
+        <img src="quarto-1.jpg" alt="Bedroom 1" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="11">
+        <img src="quarto-2.jpg" alt="Bedroom 2" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bathrooms -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Bathrooms" data-pt="Casas de Banho">Bathrooms</div>
+    <div class="g-grid two">
+      <div class="gi" data-idx="12">
+        <img src="wc-social.jpg" alt="Social bathroom" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="13">
+        <img src="wc-suite.jpg" alt="En-suite bathroom" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Balcony -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Balcony &amp; Views" data-pt="Varanda e Vistas">Balcony &amp; Views</div>
+    <div class="g-grid feat">
+      <div class="gi" data-idx="14">
+        <img src="varanda-2.jpg" alt="Balcony" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="15">
+        <img src="varanda-3.jpg" alt="Balcony" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="16">
+        <img src="varanda-4.jpg" alt="Balcony" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="17">
+        <img src="varanda-1.jpg" alt="Balcony" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Garage -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Independent Garage" data-pt="Garagem Independente">Independent Garage</div>
+    <div class="g-grid two">
+      <div class="gi" data-idx="18">
+        <img src="garagem-1.jpg" alt="Garage" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+      <div class="gi" data-idx="19">
+        <img src="garagem-2.png" alt="Garage" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Facade -->
+  <div class="group reveal">
+    <div class="group-label" data-en="Building Facade" data-pt="Fachada do Edifício">Building Facade</div>
+    <div class="g-grid two">
+      <div class="gi" data-idx="20" style="grid-column:1/-1; aspect-ratio:16/7;">
+        <img src="fachada.png" alt="Building facade" loading="lazy">
+        <div class="gi-ov"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floor plan -->
+  <div class="floorplan reveal">
+    <div class="group-label" data-en="Floor Plan" data-pt="Planta do Apartamento">Floor Plan</div>
+    <div class="fp-card">
+      <div class="fp-img" data-idx="21">
+        <img src="planta-apartamento.jpg" alt="Floor plan" loading="lazy">
+      </div>
+      <div class="fp-info">
+        <h3 data-en="Apartment Layout" data-pt="Planta do Apartamento">Apartment Layout</h3>
+        <p data-en="98 m² of bright, well-organised living space. The layout features a generous living room with direct access to the balcony, a fully separate kitchen with pantry, two bedrooms (master en-suite) and two bathrooms. Practical, light-filled and move-in ready. Also includes an independent 22 m² garage with direct street access." data-pt="98 m² de espaço luminoso e bem organizado. A planta apresenta uma sala generosa com acesso direto à varanda, cozinha independente com dispensa, dois quartos (master em suite) e duas casas de banho. Prático, cheio de luz e pronto a habitar. Inclui ainda uma garagem independente de 22 m², com acesso direto à rua.">98 m² of bright, well-organised living space. The layout features a generous living room with direct access to the balcony, a fully separate kitchen with pantry, two bedrooms (master en-suite) and two bathrooms. Practical, light-filled and move-in ready. Also includes an independent 22 m² garage with direct street access.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════════════
+     PROPERTY DETAILS
+═══════════════════════════════════════════ -->
+<section class="details-section section" id="details">
+  <div class="inner">
+    <div class="reveal">
+      <span class="eyebrow" data-en="Property Specs" data-pt="Características">Property Specs</span>
+      <h2 class="s-title" data-en="The <em>Details</em> That Matter" data-pt="Os <em>Detalhes</em> que Importam">The <em>Details</em> That Matter</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="specs reveal d1">
+      <div class="spec">
+        <span class="spec-ico">📐</span>
+        <div class="spec-val">120 m²</div>
+        <div class="spec-lbl" data-en="Total Area" data-pt="Área Total">Total Area</div>
+      </div>
+      <div class="spec">
+        <span class="spec-ico" style="filter:brightness(0) invert(1) opacity(.75);">🛏</span>
+        <div class="spec-val">2</div>
+        <div class="spec-lbl" data-en="Bedrooms" data-pt="Quartos">Bedrooms</div>
+      </div>
+      <div class="spec">
+        <span class="spec-ico">🚿</span>
+        <div class="spec-val">2</div>
+        <div class="spec-lbl" data-en="Bathrooms" data-pt="Casas de Banho">Bathrooms</div>
+      </div>
+      <div class="spec">
+        <span class="spec-ico">🏢</span>
+        <div class="spec-val">2º / 5</div>
+        <div class="spec-lbl" data-en="Floor / Total" data-pt="Andar / Total">Floor / Total</div>
+      </div>
+      <div class="spec">
+        <span class="spec-ico">🛗</span>
+        <div class="spec-val" data-en="Yes" data-pt="Sim">Yes</div>
+        <div class="spec-lbl" data-en="Elevator" data-pt="Elevador">Elevator</div>
+      </div>
+      <div class="spec">
+        <span class="spec-ico">❄️</span>
+        <div class="spec-val">A/C</div>
+        <div class="spec-lbl" data-en="Air Conditioning" data-pt="Ar Condicionado">Air Conditioning</div>
+      </div>
+      <div class="spec">
+        <span class="spec-ico" style="filter:brightness(0) invert(1) opacity(.75);">🗓</span>
+        <div class="spec-val">1999</div>
+        <div class="spec-lbl" data-en="Year Built" data-pt="Ano de Construção">Year Built</div>
+      </div>
+      <div class="spec">
+        <span class="spec-ico">⚡</span>
+        <div class="spec-val">C</div>
+        <div class="spec-lbl" data-en="Energy Rating" data-pt="Certificação Energética">Energy Rating</div>
+      </div>
+    </div>
+
+    <div class="garage-callout reveal d2">
+      <div class="gc-ico">🅿️</div>
+      <div class="gc-text">
+        <h3 data-en="Includes Independent Private Garage — Extremely Rare in Lagos" data-pt="Inclui Garagem Privada Independente — Uma Raridade em Lagos">Includes Independent Private Garage — Extremely Rare in Lagos</h3>
+        <p data-en="The garage is a separate fraction with its own deed and direct street-level access. It is equipped with water and electricity. Private parking in São Gonçalo de Lagos is one of the most sought-after assets in the area. The apartment and garage are sold together as a package." data-pt="A garagem é uma fração autónoma com escritura própria e acesso direto pela rua. Está equipada com água e luz. Estacionamento privado em São Gonçalo de Lagos é um dos ativos mais procurados da zona. O apartamento e a garagem são vendidos em conjunto.">The garage is a separate fraction with its own deed and direct street-level access. It is equipped with water and electricity. Private parking in São Gonçalo de Lagos is one of the most sought-after assets in the area. The apartment and garage are sold together as a package.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     LOCATION VIDEO
+═══════════════════════════════════════════ -->
+<section class="video-section section" id="video">
+  <div class="inner">
+    <div class="reveal" style="margin-bottom:2rem;">
+      <span class="eyebrow" data-en="Location &amp; Neighbourhood" data-pt="Localização e Bairro">Location &amp; Neighbourhood</span>
+      <h2 class="s-title" data-en="See the <em>Area</em>" data-pt="Conheça a <em>Zona</em>">See the <em>Area</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="reveal" style="max-width:860px; margin:0 auto;">
+      <div class="vid-embed">
+        <iframe src="https://player.vimeo.com/video/1169598686?color=C4532A&amp;title=0&amp;byline=0&amp;portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy" title="Location overview"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     LOCATION
+═══════════════════════════════════════════ -->
+<section class="location-section section" id="location">
+  <div class="loc-inner">
+    <div class="reveal">
+      <span class="eyebrow" data-en="Location" data-pt="Localização">Location</span>
+      <h2 class="s-title" data-en="Lagos — <em>Where You Belong</em>" data-pt="Lagos — <em>Onde Vai Querer Ficar</em>">Lagos — <em>Where You Belong</em></h2>
+      <div class="divider"></div>
+      <div class="loc-text">
+        <p data-en="Rua de Pallos de La Frontera, São Gonçalo de Lagos — a quiet, well-connected neighbourhood just minutes from the historic heart of Lagos. You're a short walk from the marina, the old town walls, and some of the Algarve's most loved beaches." data-pt="Rua de Pallos de La Frontera, São Gonçalo de Lagos — um bairro tranquilo e bem servido, a poucos minutos do centro histórico de Lagos. Está a uma curta caminhada da marina, das muralhas da cidade e de algumas das praias mais amadas do Algarve.">Rua de Pallos de La Frontera, São Gonçalo de Lagos — a quiet, well-connected neighbourhood just minutes from the historic heart of Lagos. You're a short walk from the marina, the old town walls, and some of the Algarve's most loved beaches.</p>
+        <p data-en="Lagos is the beating heart of the western Algarve expat scene. Thousands of British, Dutch, German, and Scandinavian families have made it home — drawn by the climate, the culture, the safety, and a quality of life that is genuinely hard to find anywhere else in Europe." data-pt="Lagos é o coração da comunidade expatriada do Algarve ocidental. Milhares de famílias britânicas, holandesas, alemãs e escandinavas fizeram daqui a sua casa — atraídas pelo clima, pela cultura, pela segurança e por uma qualidade de vida difícil de encontrar em outro ponto da Europa.">Lagos is the beating heart of the western Algarve expat scene. Thousands of British, Dutch, German, and Scandinavian families have made it home — drawn by the climate, the culture, the safety, and a quality of life that is genuinely hard to find anywhere else in Europe.</p>
+        <p data-en="The Clube de Ténis e Padel de Lagos is just steps away — a great asset for sports enthusiasts and families alike." data-pt="O Clube de Ténis e Padel de Lagos fica mesmo ao lado — uma mais-valia para os amantes de desporto e para famílias.">The Clube de Ténis e Padel de Lagos is just steps away — a great asset for sports enthusiasts and families alike.</p>
+        <ul class="tags">
+          <li><span class="tag">🏖 Meia Praia</span></li>
+          <li><span class="tag">🏖 Dona Ana</span></li>
+          <li><span class="tag">🏖 Porto de Mós</span></li>
+          <li><span class="tag">⛵ Marina de Lagos</span></li>
+          <li><span class="tag">🏛 Historic Centre</span></li>
+          <li><span class="tag">🏥 Lagos Hospital</span></li>
+          <li><span class="tag">🛒 Supermarkets</span></li>
+          <li><span class="tag">🏫 International Schools</span></li>
+          <li><span class="tag">🍽 Restaurants &amp; Cafés</span></li>
+          <li><span class="tag">🎾 Clube de Ténis e Padel de Lagos</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="map-wrap reveal d2">
+      <iframe
+        src="https://maps.google.com/maps?q=37.11005257810758,-8.681109169051819&amp;z=15&amp;output=embed"
+        allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map — São Gonçalo de Lagos"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     LIFESTYLE
+═══════════════════════════════════════════ -->
+<section class="lifestyle-section section" id="lifestyle">
+  <div class="inner">
+    <div class="reveal">
+      <span class="eyebrow" data-en="The Algarve Life" data-pt="A Vida no Algarve">The Algarve Life</span>
+      <h2 class="s-title" data-en="Why People <em>Never Leave</em>" data-pt="Porque as Pessoas <em>Ficam Para Sempre</em>">Why People <em>Never Leave</em></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="life-grid">
+      <div class="life-card reveal d1">
+        <span class="life-ico">☀️</span>
+        <h4 data-en="300 Days of Sun" data-pt="300 Dias de Sol">300 Days of Sun</h4>
+        <p data-en="One of Europe's finest climates — warm, dry summers and mild winters. Outdoor living is a genuine year-round reality in the Algarve." data-pt="Um dos melhores climas da Europa — verões quentes e secos, invernos suaves. A vida ao ar livre é uma realidade genuína durante todo o ano no Algarve.">One of Europe's finest climates — warm, dry summers and mild winters. Outdoor living is a genuine year-round reality in the Algarve.</p>
+      </div>
+      <div class="life-card reveal d2">
+        <span class="life-ico">🛡️</span>
+        <h4 data-en="Safe &amp; Welcoming" data-pt="Seguro e Acolhedor">Safe &amp; Welcoming</h4>
+        <p data-en="Portugal consistently ranks among the world's safest countries. Lagos is a warm, open community where expats feel at home from day one." data-pt="Portugal figura consistentemente entre os países mais seguros do mundo. Lagos é uma comunidade calorosa onde os expatriados se sentem em casa desde o primeiro dia.">Portugal consistently ranks among the world's safest countries. Lagos is a warm, open community where expats feel at home from day one.</p>
+      </div>
+      <div class="life-card reveal d3">
+        <span class="life-ico">🌍</span>
+        <h4 data-en="Vibrant Expat Community" data-pt="Comunidade Expat Vibrante">Vibrant Expat Community</h4>
+        <p data-en="Lagos has one of Portugal's largest international communities — British, Dutch, German, American. A rich social life and easy integration await." data-pt="Lagos tem uma das maiores comunidades internacionais de Portugal — britânicos, holandeses, alemães, americanos. Uma vida social rica e integração fácil.">Lagos has one of Portugal's largest international communities — British, Dutch, German, American. A rich social life and easy integration await.</p>
+      </div>
+      <div class="life-card reveal d4">
+        <span class="life-ico">💶</span>
+        <h4 data-en="Real Value for Money" data-pt="Verdadeiro Valor pelo Dinheiro">Real Value for Money</h4>
+        <p data-en="Significantly lower cost of living than France, Spain or the UK — with excellent healthcare, infrastructure, food, and a higher quality of life." data-pt="Custo de vida significativamente inferior ao de França, Espanha ou o Reino Unido — com saúde, infraestrutura e gastronomia de excelência e maior qualidade de vida.">Significantly lower cost of living than France, Spain or the UK — with excellent healthcare, infrastructure, food, and a higher quality of life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section class="contact-section section" id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <span class="eyebrow" data-en="Get in Touch" data-pt="Entre em Contacto">Get in Touch</span>
+      <h2 class="s-title" data-en="Interested? <em>Let's Talk.</em>" data-pt="Interessado? <em>Vamos Conversar.</em>">Interested? <em>Let's Talk.</em></h2>
+      <div class="divider"></div>
+      <p class="contact-note" data-en="Direct sale by owner — no agency, no commission. All legal and bureaucratic matters are handled by a reputable local lawyer." data-pt="Venda direta pelo proprietário — sem agência, sem comissão. Toda a burocracia e papelada é gerida por um advogado local de confiança.">Direct sale by owner — no agency, no commission. All legal and bureaucratic matters are handled by a reputable local lawyer.</p>
+      <div class="c-btns">
+        <a href="https://wa.me/351936133358" class="c-btn c-btn-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-en="WhatsApp: +351 936 133 358" data-pt="WhatsApp: +351 936 133 358">WhatsApp: +351 936 133 358</span>
+        </a>
+        <a href="mailto:anagnguerreiro@gmail.com" class="c-btn c-btn-em">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          anagnguerreiro@gmail.com
+        </a>
+      </div>
+      <div class="listings-row">
+        <h5 data-en="Also listed on" data-pt="Também disponível em">Also listed on</h5>
+        <a href="https://www.idealista.pt/imovel/34839846/" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          Idealista
+        </a>
+        <a href="https://www.imovirtual.com/pt/anuncio/apartamento-t2-garagem-independente-em-lagos-ID1hXbq" target="_blank" rel="noopener noreferrer">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          Imovirtual
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <p class="f-text" data-en="Private Sale · Lagos, Algarve, Portugal · 2026" data-pt="Venda Particular · Lagos, Algarve, Portugal · 2026">Private Sale · Lagos, Algarve, Portugal · 2026</p>
+    <p class="f-disc" data-en="This is a direct sale by the property owner. No real estate agency is involved. All legal matters are managed by a qualified local lawyer." data-pt="Esta é uma venda direta pelo proprietário. Não existe qualquer agência imobiliária envolvida. Toda a parte legal é gerida por um advogado local qualificado.">This is a direct sale by the property owner. No real estate agency is involved. All legal matters are managed by a qualified local lawyer.</p>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     LIGHTBOX
+═══════════════════════════════════════════ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img class="lb-img" id="lbImg" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<script>
+/* ── IMAGES LIST (matches gallery order above) ─── */
+const IMGS = [
+  'sala-1.jpg','sala-2.jpg','sala-3.jpg',
+  'cozinha-1.jpg','cozinha-2.jpg','dispensa.jpg',
+  'hall.jpg','corredor.jpg',
+  'suite-1.jpg','suite-2.jpg','quarto-1.jpg','quarto-2.jpg',
+  'wc-social.jpg','wc-suite.jpg',
+  'varanda-2.jpg','varanda-3.jpg','varanda-4.jpg','varanda-1.jpg',
+  'garagem-1.jpg','garagem-2.png',
+  'fachada.png',
+  'planta-apartamento.jpg'
+];
+
+/* ── LANGUAGE TOGGLE ─────────────────────────── */
+let lang = 'en';
+function applyLang(l) {
+  lang = l;
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const txt = el.getAttribute('data-' + l);
+    if (txt !== null) el.innerHTML = txt;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    const active = b.dataset.lang === l;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-pressed', active);
+  });
+
+}
+
+document.querySelectorAll('.lang-btn').forEach(b =>
+  b.addEventListener('click', () => applyLang(b.dataset.lang))
+);
+
+/* ── NAV SCROLL ──────────────────────────────── */
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', scrollY > 70);
+}, { passive: true });
+
+/* ── HERO PARALLAX ───────────────────────────── */
+const heroBg = document.getElementById('heroBg');
+window.addEventListener('scroll', () => {
+  if (scrollY < innerHeight) {
+    heroBg.style.transform = `scale(1.06) translateY(${scrollY * 0.22}px)`;
+  }
+}, { passive: true });
+
+/* ── SCROLL REVEAL ───────────────────────────── */
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -35px 0px' });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+/* ── LIGHTBOX ────────────────────────────────── */
+let cur = 0;
+const lb    = document.getElementById('lb');
+const lbImg = document.getElementById('lbImg');
+const lbCnt = document.getElementById('lbCount');
+
+function lbOpen(i) {
+  cur = i;
+  lbImg.src = IMGS[i];
+  lbCnt.textContent = (i + 1) + ' / ' + IMGS.length;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function lbClose() {
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+}
+function lbGo(dir) {
+  cur = (cur + dir + IMGS.length) % IMGS.length;
+  lbImg.src = IMGS[cur];
+  lbCnt.textContent = (cur + 1) + ' / ' + IMGS.length;
+}
+
+/* Gallery items with data-idx */
+document.querySelectorAll('.gi[data-idx]').forEach(el =>
+  el.addEventListener('click', () => lbOpen(+el.dataset.idx))
+);
+/* Floor plan */
+document.querySelector('.fp-img[data-idx]').addEventListener('click', function() {
+  lbOpen(+this.dataset.idx);
+});
+
+document.getElementById('lbClose').addEventListener('click', lbClose);
+document.getElementById('lbPrev').addEventListener('click', () => lbGo(-1));
+document.getElementById('lbNext').addEventListener('click', () => lbGo(1));
+lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') lbClose();
+  if (e.key === 'ArrowLeft') lbGo(-1);
+  if (e.key === 'ArrowRight') lbGo(1);
+});
+
+/* Touch swipe on lightbox */
+let tx = 0;
+lbImg.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+lbImg.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) lbGo(dx < 0 ? 1 : -1);
+});
+</script>
+</body>
+</html>
